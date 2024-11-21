@@ -2,13 +2,13 @@
 
 // カードデータ（imagesフォルダ内の画像を使用）
 const cards = [
-  { id: 1, name: "カード1", image: "images/card1.png" },
-  { id: 2, name: "カード2", image: "images/card2.png" },
-  { id: 3, name: "カード3", image: "images/card3.png" },
-  { id: 4, name: "カード4", image: "images/card4.png" },
-  { id: 5, name: "カード5", image: "images/card5.png" },
-  { id: 6, name: "カード6", image: "images/card6.png" },
-  { id: 7, name: "カード7", image: "images/card7.png" },
+  { id: 1, name: "かなえる", image: "images/card1.png" },
+  { id: 2, name: "なんでも", image: "images/card2.png" },
+  { id: 3, name: "マッサージ", image: "images/card3.png" },
+  { id: 4, name: "あまえて", image: "images/card4.png" },
+  { id: 5, name: "どこでも", image: "images/card5.png" },
+  { id: 6, name: "おむかえ", image: "images/card6.png" },
+  { id: 7, name: "好きなもの", image: "images/card7.png" },
 ];
 
 // 状態管理
