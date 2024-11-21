@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* 全体スタイル */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+#game {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#result {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-result {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  animation: appear 0.5s ease-out;
+}
+
+.card-result img {
+  width: 80px; /* スマホ向けに小さめに設定 */
+  height: auto;
+}
+
+.card-result:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 8px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.modal-content img {
+  width: 90%;
+  height: auto;
+}
+
+#modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 点灯エフェクト */
+#effect-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  z-index: 1000;
+  pointer-events: none;
+  transition: background 0.5s ease-in-out;
+}
+
+#effect-overlay.active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* ボタンのアニメーション */
+#gachaButton {
+  transition: transform 0.2s;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+#gachaButton:active {
+  transform: scale(0.9);
+}
+
+/* アニメーション */
+@keyframes appear {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
